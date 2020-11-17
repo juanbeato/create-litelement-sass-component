@@ -15,6 +15,8 @@ import {
   TsDemoingStorybookScaffoldMixin,
 } from '../demoing-storybook-ts/index.js';
 import { TsBuildingRollupMixin } from '../building-rollup-ts/index.js';
+//sass
+import { WcLitElementSassMixin, WcLitElementSassPackageMixin } from '../wc-sass-lit-element/index.js';
 
 export function gatherMixins(options) {
   let considerScaffoldFilesFor = false;
@@ -39,8 +41,17 @@ export function gatherMixins(options) {
           mixins.push(WcLitElementPackageMixin);
           considerScaffoldFilesFor = true;
           break;
+        case 'wc-sass':
+          mixins.push(WcLitElementSassPackageMixin);
+          considerScaffoldFilesFor = true;
+          break;
         case 'wc-lit-element':
           mixins.push(WcLitElementMixin);
+          considerScaffoldFilesFor = true;
+          break;
+        case 'wc-sass-lit-element':
+          console.log('ENTRO en wc-sass-lit-element');
+          mixins.push(WcLitElementSassMixin);
           considerScaffoldFilesFor = true;
           break;
         // no default

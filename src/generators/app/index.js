@@ -58,6 +58,7 @@ export const AppMixin = subclass =>
           message: 'What would you like to scaffold?',
           choices: [
             { title: 'Web Component', value: 'wc' },
+            { title: 'Web Component With Sass', value: 'wc-sass' },
             { title: 'Application', value: 'app' },
           ],
         },

@@ -16,7 +16,7 @@
   "author": "open-wc",
   "homepage": "https://github.com/open-wc/create",
   "bin": {
-    "create-open-wc": "./dist/create.js"
+    "create-open-wc-sass": "./dist/create.js"
   },
   "scripts": {
     "build": "rm -rf dist && babel src --out-dir dist --copy-files --include-dotfiles",
