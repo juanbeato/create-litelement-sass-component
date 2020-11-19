@@ -50,7 +50,6 @@ export function gatherMixins(options) {
           considerScaffoldFilesFor = true;
           break;
         case 'wc-sass-lit-element':
-          console.log('ENTRO en wc-sass-lit-element');
           mixins.push(WcLitElementSassMixin);
           considerScaffoldFilesFor = true;
           break;

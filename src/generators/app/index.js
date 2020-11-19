@@ -64,7 +64,7 @@ export const AppMixin = subclass =>
         },
         {
           type: (prev, all) =>
-            all.scaffoldType === 'wc' || all.scaffoldType === 'app' || all.type === 'upgrade'
+            all.scaffoldType === 'wc' || all.scaffoldType === 'wc-sass' || all.scaffoldType === 'app' || all.type === 'upgrade'
               ? 'multiselect'
               : null,
           name: 'features',
