@@ -1,6 +1,6 @@
 {
-  "main": "index.js",
-  "module": "index.js",
+  "main": "<%= tagName %>.js",
+  "module": "<%= tagName %>.js",
   "scripts": {
     "build": "webpack --mode production",
     "builddev": "webpack --mode development",
